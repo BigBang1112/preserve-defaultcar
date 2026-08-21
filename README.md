@@ -8,7 +8,7 @@ This questionable change was introduced in the Summer 2024 update and hasn't bee
 
 It intercepts all `EditMap` ManiaScript API calls and removes the `CarSport` value from the `PlayerModel` parameter. Here's how the function looks like:
 
-```
+```php
 Void CTitleControl::EditMap(Text Map,
   Text Decoration,
   Text ModNameOrUrl,
