@@ -50,10 +50,10 @@ if (State.LaunchParams.MapToEdit.Uid != "") {
 
 ## Why not keep it just for Editor++?
 
-Editor++ is quite a big mapping package, while in different scenarios, you just want to validate the map you're given (with the correct car) and don't need any of the mapping tools.
+Editor++ by XertroV is quite a big mapping package, while in different scenarios, you just want to validate the map you're given (with the correct car) and don't need any of the mapping tools.
 
 Editor++ also automatically disables itself on each new update, which brings more confusion to the table.
 
 ## Special thanks
 
-To XetroV, who originally found the solution.
+To XertroV, who originally found the solution.
