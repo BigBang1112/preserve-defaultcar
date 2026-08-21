@@ -6,9 +6,20 @@ This questionable change was introduced in the Summer 2024 update and hasn't bee
 
 ## How it works
 
-It intercepts all `EditMap` requests and removes the `CarSport` value from the `PlayerModel` parameter.
+It intercepts all `EditMap` ManiaScript API calls and removes the `CarSport` value from the `PlayerModel` parameter. Here's how the function looks like:
 
-This is occurring multiple times in the official `Scripts/Libs/Nadeo/Trackmania/MainMenu/Pages/MapEditorSettings.Script.txt` script in such format:
+```
+Void CTitleControl::EditMap(Text Map,
+  Text Decoration,
+  Text ModNameOrUrl,
+  Text PlayerModel,
+  Array<Text> EditorPluginsScripts,
+  Array<Text> EditorPluginsArguments,
+  Boolean UpgradeToAdvancedEditor,
+  Boolean OnlyUseForcedPlugins)
+```
+
+This is called multiple times in the official `Scripts/Libs/Nadeo/Trackmania/MainMenu/Pages/MapEditorSettings.Script.txt` script in such format:
 
 ```php
 if (State.LaunchParams.MapToEdit.Uid != "") {
