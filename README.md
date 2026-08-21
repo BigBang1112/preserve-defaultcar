@@ -19,7 +19,7 @@ if (State.LaunchParams.MapToEdit.Uid != "") {
     FileName,
     "",
     "",
-    EnvironmentInfo::C_PlayerModel_CarSport, // ... CarSport value here
+    EnvironmentInfo::C_PlayerModel_CarSport, // ... forced CarSport value here
     EditorPluginScripts,
     EditorPluginSettings,
     State.LaunchParams.Difficulty != C_Difficulty_Simple,
@@ -39,7 +39,7 @@ if (State.LaunchParams.MapToEdit.Uid != "") {
     FileName,
     "",
     "",
-    "", // ... lets the default car enjoy their time
+    "", // ... lets the map's default car enjoy their time
     EditorPluginScripts,
     EditorPluginSettings,
     State.LaunchParams.Difficulty != C_Difficulty_Simple,
